@@ -4,7 +4,7 @@ require "test/unit"
 class FooTest < Test::Unit::TestCase
 
 def test_One
-	assert_equal(0,chus(9))
+	assert_nil(chus(9))
 end
 
 def test_Two
