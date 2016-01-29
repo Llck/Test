@@ -8,10 +8,22 @@ def test_One
 end
 
 def test_Two
-	assert_equal(10,chus(30))
+	assert_equal(30,chus(10))
 end
 
 def test_Three
-	assert_equal(11,chus(33))
+	assert_equal(33,chus(11))
 end
 
+def test_Four
+	assert_equal(297,chus(99))
+end
+
+def test_Five
+	assert_equal(300,chus(100))
+end
+
+def test_Six
+	assert_equal(-1,chus(101))
+end
+end
