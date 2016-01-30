@@ -12,18 +12,18 @@ class BarTest < Test::Unit::TestCase
 
 test "should return the symbol multiplied by 3 does not go beyond 10" do
 	var =9
-	assert(chus(var)==0)
+	assert_equal("0",chus(var))
 	var =10
-	assert(chus(var)==30)
+	assert_equal("30",chus(var))
 	var =11
-	assert(chus(var)==33)
+	assert_equal("33",chus(var))
 end
 test "should return the symbol multipliedby 3 does not go beyond 100" do
     var =99
-    assert(chus(var)==297)
+    assert_equal("297",chus(var))
     var =100
-    assert(chus(var)==300)
+    assert_equal("300",chus(var))
     var =101
-    assert(chus(var)==-1)
+   assert_equal("-1",chus(var))
 end
 end	
