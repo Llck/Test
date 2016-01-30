@@ -1,5 +1,5 @@
 def chus  (a) 
-m=a*3
+    m=a*3
     if a>100
 	    return -1 
 
@@ -9,5 +9,5 @@ m=a*3
 	else
 	    return m
 
-	end	
+    end	
 end
