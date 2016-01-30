@@ -1,7 +1,7 @@
 def chus  (a) 
 	m=a*3
 	if a>100
-	puts "-1" 
+	return "-1" 
 	elsif a<10
 		return"0"
 				
