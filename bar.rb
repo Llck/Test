@@ -3,10 +3,10 @@ def chus  (a)
 	if a>100
 	puts "-1" 
 	elsif a<10
-		puts"0"
+		return"0"
 				
 	else
-	    puts "#{m}"
+	    return "#{m}"
 				
 			end	
 end
