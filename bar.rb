@@ -2,10 +2,11 @@ def chus  (a)
 	m=a*3
 	if a>100
 	puts "-1" 
-		if a<10
-			puts"0"
+	elsif a<10
+		puts"0"
 				
-			else puts "#{m}"
+	else
+	    puts "#{m}"
 				
 			end	
 end

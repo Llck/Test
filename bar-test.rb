@@ -1,29 +1,29 @@
 require "./bar"
 require "test/unit"
 
-class FooTest < Test::Unit::TestCase
+class BarTest < Test::Unit::TestCase
 
-def test_One
-	assert_nil(chus(9))
-end
+  def setup
+    ## @num = SimpleNumber.new(2)
+  end
+  def teardown
+    ## Nothing really
+  end
 
-def test_Two
-	assert_equal(30,chus(10))
+test "should return the symbol multiplied by 3 does not go beyond 10" do
+	var =9
+	assert(chus(var)==0)
+	var =10
+	assert(chus(var)==30)
+	var =11
+	assert(chus(var)==33)
 end
-
-def test_Three
-	assert_equal(33,chus(11))
+test "should return the symbol multipliedby 3 does not go beyond 100" do
+    var =99
+    assert(chus(var)==297)
+    var =100
+    assert(chus(var)==300)
+    var =101
+    assert(chus(var)==-1)
 end
-
-def test_Four
-	assert_equal(297,chus(99))
-end
-
-def test_Five
-	assert_equal(300,chus(100))
-end
-
-def test_Six
-	assert_equal(-1,chus(101))
-end
-end
+end	
