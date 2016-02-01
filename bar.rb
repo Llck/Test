@@ -1,13 +1,16 @@
 def chus  (a) 
-    m=a*3
+   
     if a>100
 	     -1 
 
 	elsif a<10
 		 0
 
-	else
-	     m
+	elsif 255<a>200
+	     a*2
+
+    else
+    	a*3
 
     end	
 end

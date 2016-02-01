@@ -35,5 +35,25 @@ class BarTest < Test::Unit::TestCase
 expected number" do
         assert_equal(0,chus9())
     end
+    test "should return the symbol multipliedby 2 does not go beyond 200"do
+        var=199
+        assert_equal(-1,chus(var))
+
+        var=200
+        assert_equal(400,chus(var))
+
+        var=201
+        assert_equal(402,chus(var))
+    end
+    test "should return the symbol multipliedby 2 does not go beyond 255"do
+        var=254
+        assert_equal(508,chus(var))
+
+        var=255
+        assert_equal(510,chus(var))
+
+        var=256
+        assert_equal(-1,chus(var))
+    end
 end
 	
