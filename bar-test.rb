@@ -31,7 +31,9 @@ class BarTest < Test::Unit::TestCase
         var =101
             assert_equal(-1,chus(var))
     end
-    def chus9 
-        assert_equal(9,chus9)
+    test "function chus9 should return 
+expected number"
+        assert_equal(0,chus9())
     end
-end	
+end
+	
