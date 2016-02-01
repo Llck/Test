@@ -31,4 +31,7 @@ class BarTest < Test::Unit::TestCase
         var =101
             assert_equal(-1,chus(var))
     end
+    def chus9 
+        assert_equal(9,chus9)
+    end
 end	
