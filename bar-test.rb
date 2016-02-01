@@ -32,7 +32,7 @@ class BarTest < Test::Unit::TestCase
             assert_equal(-1,chus(var))
     end
     test "function chus9 should return 
-expected number"
+expected number" do
         assert_equal(0,chus9())
     end
 end

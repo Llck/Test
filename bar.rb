@@ -14,5 +14,4 @@ end
 
 def chus9
     return chus(9)
-    end
 end
